@@ -111,21 +111,24 @@ html {
 
 #content {}
 
-#content .content-section {
+#content .content-section,
+#content .tour .content-section-tour {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 0;
 }
 
-#content .content-section .heading-section {
+#content .content-section .heading-section,
+.tour .content-section-tour .heading-section-tour {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-weight: 400;
     font-size: 30px;
 }
 
-#content .content-section .section-sub-heading {
+#content .content-section .section-sub-heading,
+#content .content-section-tour .section-sub-heading-tour {
     font-style: italic;
     opacity: 0.60;
     margin-top: 25px;
@@ -140,7 +143,9 @@ html {
 }
 
 #content .content-section .heading-section,
-#content .content-section .section-sub-heading {
+#content .content-section .section-sub-heading,
+.tour .content-section-tour .heading-section-tour,
+.tour .content-section-tour .section-sub-heading-tour {
     text-align: center;
 }
 
@@ -178,4 +183,16 @@ html {
 
 .images-girl>.images-girl-five>img {
     margin-bottom: 16px;
+}
+
+#content .tour {
+    background-color: #000;
+}
+
+#content .content-section-tour .heading-section-tour {
+    color: #fff;
+}
+
+#content .content-section-tour .section-sub-heading-tour {
+    color: #fff;
 }
