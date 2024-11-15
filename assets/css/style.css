@@ -1,0 +1,181 @@
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+}
+
+#main {}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: black;
+    z-index: 1;
+}
+
+#nav>a {
+    float: right;
+    line-height: 46px;
+    padding: 0px 24px;
+}
+
+#nav>a:hover {
+    background-color: red;
+}
+
+.fa-search {
+    color: #fff;
+}
+
+#nav li {
+    position: relative;
+    display: inline-block;
+}
+
+#nav,
+.subNav {
+    list-style-type: none;
+}
+
+#nav>li>a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+#nav li:hover .subNav {
+    display: block;
+}
+
+#nav>li:hover>a,
+.subNav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subNav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.subNav li {
+    width: 100%;
+}
+
+.subNav li a {
+    display: block;
+    padding: 8px 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    text-align: center;
+    background: url("/assets/images/team.jpeg") top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 32px;
+    color: #fff;
+    padding: 0px 16px;
+}
+
+#slider .text-content .text-heading {
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+#slider .text-content .text-description {
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+#content {}
+
+#content .content-section {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+}
+
+#content .content-section .heading-section {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+#content .content-section .section-sub-heading {
+    font-style: italic;
+    opacity: 0.60;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+#content .content-section .about {
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+#content .content-section .heading-section,
+#content .content-section .section-sub-heading {
+    text-align: center;
+}
+
+.content-section .images-girl {
+    margin-top: 47px;
+    text-align: center;
+    display: grid;
+    grid: auto / auto auto auto;
+
+}
+
+.content-section .images-girl .images-girl-one,
+.content-section .images-girl .images-girl-two,
+.content-section .images-girl .images-girl-three,
+.content-section .images-girl .images-girl-five {
+    max-width: 255px;
+}
+
+.images-girl .images-girl-one p,
+.images-girl .images-girl-two p,
+.images-girl .images-girl-three p,
+.images-girl .images-girl-five p {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.images-girl .images-girl-one img,
+.images-girl .images-girl-two img,
+.images-girl .images-girl-three img,
+.images-girl .images-girl-five img {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.images-girl>.images-girl-five>img {
+    margin-bottom: 16px;
+}
