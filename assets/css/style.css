@@ -9,6 +9,10 @@ html {
     font-family: "Lato", sans-serif;
 }
 
+.clear {
+    clear: both;
+}
+
 #main {}
 
 #header {
@@ -160,6 +164,7 @@ html {
 .content-section .images-girl .images-girl-one,
 .content-section .images-girl .images-girl-two,
 .content-section .images-girl .images-girl-three,
+.content-section .images-girl .images-girl-four,
 .content-section .images-girl .images-girl-five {
     max-width: 255px;
 }
@@ -167,6 +172,7 @@ html {
 .images-girl .images-girl-one p,
 .images-girl .images-girl-two p,
 .images-girl .images-girl-three p,
+.images-girl .images-girl-four p,
 .images-girl .images-girl-five p {
     text-align: center;
     margin: 15px 0;
@@ -175,14 +181,11 @@ html {
 .images-girl .images-girl-one img,
 .images-girl .images-girl-two img,
 .images-girl .images-girl-three img,
+.images-girl .images-girl-four img,
 .images-girl .images-girl-five img {
     width: 60%;
     height: 60%;
     object-fit: cover;
-}
-
-.images-girl>.images-girl-five>img {
-    margin-bottom: 16px;
 }
 
 #content .tour {
@@ -195,4 +198,51 @@ html {
 
 #content .content-section-tour .section-sub-heading-tour {
     color: #fff;
+}
+
+.list{
+    width: 100%;
+    display: grid;
+    grid: auto / auto auto auto;
+}
+
+.video {
+    padding: 32px 8px;
+}
+
+.video .video-list {
+    background-color: #fff;
+    border-color: #fff;
+    border-style: double;
+}
+
+.video .video-list .video-team {
+    vertical-align: middle;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.video .video-list h2,
+.video .video-list .date,
+.video .video-list .about-video {
+    padding: 0 16px;
+    margin: 15px 0;
+}
+
+.video .video-list .about-video {
+    padding-bottom: 16px;
+}
+
+.video .video-list h2 {
+    font-size: 15px;
+}
+
+.video .video-list video {
+    width: 100%;
+    height: 110px;
+}
+
+.video .video-list .date {
+    opacity: 0.60;
 }
