@@ -6,6 +6,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: "Lato", sans-serif;
 }
 
@@ -23,6 +24,7 @@ html {
     height: 46px;
     background-color: black;
     z-index: 1;
+    overflow: hidden;
 }
 
 #nav>a {
@@ -161,6 +163,21 @@ html {
 
 }
 
+.content-section .images-girl a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.content-section .images-girl i {
+    padding: 5px 3px;
+    color: #000;
+    font-size: 26px;
+}
+
+.content-section .images-girl i:hover {
+    opacity: 0.60;
+}
+
 .content-section .images-girl .images-girl-one,
 .content-section .images-girl .images-girl-two,
 .content-section .images-girl .images-girl-three,
@@ -200,14 +217,10 @@ html {
     color: #fff;
 }
 
-.list{
-    width: 100%;
-    display: grid;
-    grid: auto / auto auto auto;
-}
-
 .video {
     padding: 32px 8px;
+    width: 33.3333%;
+    float: left;
 }
 
 .video .video-list {
