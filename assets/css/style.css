@@ -24,7 +24,10 @@ html {
     height: 46px;
     background-color: black;
     z-index: 1;
-    overflow: hidden;
+}
+
+#header .mobile-menu-btn {
+    display: none;
 }
 
 #nav>a {
@@ -92,27 +95,43 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    text-align: center;
+    /* text-align: center; */
     /* background: url("/assets/images/team1.jpeg") top center / cover no-repeat; */
 }
 
-#slider .text-content {
+/* #slider .text-content {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 32px;
     color: #fff;
-    padding: 0px 16px;
+} */
+
+#slider .text-content img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #slider .text-content .text-heading {
+    position: absolute;
+    bottom: 57px;
     margin: 10px 0;
     font-weight: 400;
+    width: 100%;
+    text-align: center;
+    color: #fff;
 }
 
 #slider .text-content .text-description {
-    margin: 15px 0;
+    position: absolute;
+    bottom: 32px;
+    width: 100%;
+    text-align: center;
     font-weight: bold;
+    color: #fff;
 }
 
 #content {}
@@ -163,6 +182,30 @@ html {
 
 }
 
+.overlay {
+    position: absolute;
+    top: 49.9px;
+    right: 54px;
+    width: 148px;
+    height: 175px;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.content-section .images-girl .images-girl-one:hover .overlay,
+.content-section .images-girl .images-girl-two:hover .overlay,
+.content-section .images-girl .images-girl-three:hover .overlay,
+.content-section .images-girl .images-girl-four:hover .overlay,
+.content-section .images-girl .images-girl-five:hover .overlay {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    cursor: pointer;
+}
+
 .content-section .images-girl a {
     text-decoration: none;
     display: inline-block;
@@ -183,6 +226,7 @@ html {
 .content-section .images-girl .images-girl-three,
 .content-section .images-girl .images-girl-four,
 .content-section .images-girl .images-girl-five {
+    position: relative;
     max-width: 255px;
 }
 
@@ -200,8 +244,8 @@ html {
 .images-girl .images-girl-three img,
 .images-girl .images-girl-four img,
 .images-girl .images-girl-five img {
-    width: 60%;
-    height: 60%;
+    width: 148px;
+    height: 175px;
     object-fit: cover;
 }
 
@@ -219,7 +263,7 @@ html {
 
 .video {
     padding: 32px 8px;
-    width: 33.3333%;
+    width: 50%;
     float: left;
 }
 
@@ -227,13 +271,6 @@ html {
     background-color: #fff;
     border-color: #fff;
     border-style: double;
-}
-
-.video .video-list .video-team {
-    vertical-align: middle;
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
 }
 
 .video .video-list h2,
@@ -253,7 +290,8 @@ html {
 
 .video .video-list video {
     width: 100%;
-    height: 110px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .video .video-list .date {
