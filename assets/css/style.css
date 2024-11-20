@@ -16,6 +16,33 @@ html {
 
 #main {}
 
+.snowflake {
+    position: absolute;
+    top: -50px;
+    /* Bắt đầu phía trên */
+    left: 0;
+    animation: fall linear;
+    color: #004080;
+    /* Màu trắng với độ trong suốt nhẹ */
+    z-index: 999;
+    /* Đảm bảo tuyết nằm trên nội dung */
+    pointer-events: none;
+    /* Không cản trở người dùng tương tác */
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(160vh);
+        opacity: 1.5;
+    }
+}
+
+
 #header {
     position: fixed;
     top: 0;
@@ -123,6 +150,7 @@ html {
     width: 100%;
     text-align: center;
     color: #fff;
+    text-shadow: 0 0 5px #000;
 }
 
 #slider .text-content .text-description {
@@ -132,9 +160,13 @@ html {
     text-align: center;
     font-weight: bold;
     color: #fff;
+    text-shadow: 0 0 5px #000;
 }
 
-#content {}
+#content {
+    position: relative;
+    overflow: hidden;
+}
 
 #content .content-section,
 #content .tour .content-section-tour {
@@ -200,8 +232,6 @@ html {
 .content-section .images-girl .images-girl-three:hover .overlay,
 .content-section .images-girl .images-girl-four:hover .overlay,
 .content-section .images-girl .images-girl-five:hover .overlay {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
     cursor: pointer;
 }
@@ -247,6 +277,11 @@ html {
     width: 148px;
     height: 175px;
     object-fit: cover;
+}
+
+.introduce-team video {
+    max-width: 49%;
+    padding: 32px 16px;
 }
 
 #content .tour {
@@ -296,4 +331,25 @@ html {
 
 .video .video-list .date {
     opacity: 0.60;
+}
+
+#footer {
+    text-align: center;
+    padding: 32px 16px;
+}
+
+#footer p {
+    margin: 15px 0;
+    font-size: 15px;
+    opacity: 0.70;
+}
+
+#footer i {
+    font-size: 30px;
+    margin: 0 4px;
+    color: #000;
+}
+
+#footer i:hover {
+    opacity: 0.50;
 }
