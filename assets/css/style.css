@@ -37,7 +37,7 @@ html {
     }
 
     100% {
-        transform: translateY(190vh);
+        transform: translateY(600vh);
         opacity: 1.5;
     }
 }
@@ -196,7 +196,7 @@ html {
     text-align: justify;
     line-height: 1.5;
     margin-top: 15px;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 #content .content-section .heading-section,

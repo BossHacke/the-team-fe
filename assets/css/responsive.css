@@ -140,7 +140,7 @@
         }
 
         100% {
-            transform: translateY(500vh);
+            transform: translateY(1300vh);
             opacity: 1.5;
         }
     }
