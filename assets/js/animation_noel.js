@@ -8,7 +8,7 @@ function createSnowflake() {
     // Đặt vị trí ngẫu nhiên cho bông tuyết
     snowflake.style.left = Math.random() * 100 + 'vw';
     // Đặt thời gian rơi ngẫu nhiên
-    snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+    snowflake.style.animationDuration = Math.random() * 3 + 6 + 's';
     // Đặt kích thước ngẫu nhiên
     snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
 

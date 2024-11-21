@@ -37,7 +37,7 @@ html {
     }
 
     100% {
-        transform: translateY(160vh);
+        transform: translateY(190vh);
         opacity: 1.5;
     }
 }
